@@ -68,6 +68,7 @@ nav button{
     align-items: center;
     background-color: transparent;
     border:1px solid #fff;
+    color: #fff;
     padding:7px 20px;
 }
 .language-btn img{
@@ -75,8 +76,14 @@ nav button{
     margin-left:10px;
 
 }
+.language-btn:hover{
+    background-color:transparent ;
+}
 .language-btn:active{
     border: #fff double 4px;
+}
+.lang{
+    padding-right:2px;
 }
 /* showcase content*/
 .showcase-content{
@@ -98,12 +105,12 @@ nav button{
     margin:0 0 12px ;
     font-family: 'Montserrat', sans-serif;
 }
-.line{
+.showcase-content .line{
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 25px;
 }
-p{
+.showcase-content p{
     font-size: 18px;
     font-weight: 900px;
     line-height: 1.1;
@@ -114,7 +121,6 @@ p{
     display:flex;
     align-items: center;
     justify-content: center;
-    
 }
 .email-signup input{
     border: 1px #fff solid;
@@ -126,6 +132,8 @@ p{
     border-radius:4px;
 }
 .email-signup button{
+    display: flex;
+    justify-content: space-between;
     border:0;
     outline:0;
     background: #db0001;
@@ -137,8 +145,151 @@ p{
     margin-left: 10px;
     cursor: pointer;
 }
+#right-arrow{
+    fill: #fff;
+    padding-left:5px;
+}
 /*separator*/
 .separator{
     height: 0.5em;
     background-color: rgba(171, 166, 166, 0.4);
+}
+/*features*/
+.first{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    max-width: 80vw;
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+.section-heading{
+    font-family:'Montserrat', sans-serif;
+    font-size:48px ;
+    font-weight: 700;
+}
+.section-content{
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 2;
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    top: 13px;
+    right:52px;  
+}
+/*secound feature*/
+/*downloadbox*/
+.downloading-box{
+    display: flex;
+    background-color: #000;
+    margin: 0,auto;
+    border: gray solid 2px;
+    border-radius: 6px;
+    max-width: 80%;
+}
+.downloading-box img{
+    width: 80px;
+    padding: 10px;
+}
+.downloading-content{
+    line-height: 30px;
+}
+.downloading-box p{
+    padding-top: 30px;
+    padding-left: 2px;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.downloading-box .download{
+    padding-top:0px ;
+    font-size: 12px;
+    color: #0000ff;
+}
+.icon{
+    max-width: 40%;
+    max-height:20%;
+}
+/*third*/
+.secImg2{
+    position: relative;
+}
+.secImg2 img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg2 video{
+    position: absolute;
+    bottom:48px;
+    right:70px;  
+}
+/*FAQ*/
+.faq{
+    padding: 34px;
+}
+.faq h2{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 80%;
+    margin:auto;
+    margin-bottom: 10px;
+    background-color: rgba(37, 36, 36, 0.957);
+}
+.box p{
+    font-size: 20px;
+}
+#plus{
+    width: 35px;
+    fill:#fff;
+}
+/*footer*/
+footer{
+    padding:50px 15% 10px;
+    color: #949393;
+}
+footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+footer .row{
+    display: flex;
+    align-items: flex-start;
+    padding:10px 0px;
+}
+footer .column{
+    flex-basis: 25%;
+    flex-grow: 1%;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+footer .column a{
+    display: block;
+    color: #949393;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+footer p{
+    font-size: 13px;
+    padding-top: 5px;
 }
